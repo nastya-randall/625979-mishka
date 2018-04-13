@@ -7,7 +7,7 @@
   <body>
 
     <header class="page-header">
-      <a class="page-heder__logo-link">
+      <a class="page-heder__logo-link" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин «Мишка»">
       </a>
       <nav class="main-nav">
@@ -16,7 +16,7 @@
           <ul class="main-nav__list site-list">
             <button class="main-nav__close" type="button">Закрыть меню</button>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a>Каталог товаров</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a>
@@ -78,7 +78,7 @@
           </video>
         </div>
         <p class="video-holder__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="video-holder__button button" href="#">Сделать заказ</a>
+        <a class="video-holder__button button" href="form.html">Сделать заказ</a>
       </section>
     </main>
 
@@ -107,7 +107,7 @@
     <section class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <input class="visually-hidden" type="radio" name="size" value="Small" id="small-size" checked>
         <label class="modal__size" for="small-size">S</label>
         <input class="visually-hidden" type="radio" name="size" value="Medium" id="medium-size">
