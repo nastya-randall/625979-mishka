@@ -104,8 +104,8 @@
             </cite>
           </blockquote>
         </div>
-        <button class="reviews__toggle reviews__toggle-prev">Предыдущий отзыв</button>
-        <button class="reviews__toggle reviews__toggle-next">Следующий отзыв</button>
+        <button class="reviews__toggle reviews__toggle-prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__toggle reviews__toggle-next" type="button">Следующий отзыв</button>
         <a class="reviews__write button" href="#">Написать</a>
       </section>
       <section class="contacts-and-feedback">
@@ -126,29 +126,43 @@
           <img class="contacts-and-feedback__map-image" src="http://placehold.it/150x100" width="" height="" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
         <a class="contacts-and-feedback__feedback button" href="#">Напишите нам</a>
       </section>
-
-      <footer class="page-footer">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__logo" src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
-          </a>
-      </div>
-      </footer>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
+        </a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form">
+        <input class="visually-hidden" type="radio" name="size" value="Small" id="small-size" checked>
+        <label class="modal__size" for="small-size">S</label>
+        <input class="visually-hidden" type="radio" name="size" value="Medium" id="medium-size">
+        <label class="modal__size" for="medium-size">M</label>
+        <input class="visually-hidden" type="radio" name="size" value="Large" id="large-size">
+        <label class="modal__size" for="large-size">L</label>
+        <button class="modal__add-to-cart button button--green" type="submit">Добавить</button>
+      </form>
+    </section>
 
   </body>
 </html>
