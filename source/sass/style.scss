@@ -1,8 +1,13 @@
-@import "page-header.scss";
-@import "visually-hidden.scss";
-@import "main-nav.scss";
-@import "site-list.scss";
-@import "page-main.scss";
+@import "blocks/page-header.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/sections-list.scss";
+@import "blocks/week-item.scss";
+@import "blocks/section-title.scss";
+@import "blocks/button.scss";
+@import "blocks/features.scss";
 
 @font-face {
   font-family: "Open Sans";
@@ -21,7 +26,9 @@
 }
 
 body {
-  font-family: "Opens Sans", "Arial", sans-serif;
+width: 320px;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   background-color: #ffffff;
+  outline: 1px dashed pink;
 }
