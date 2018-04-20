@@ -1,5 +1,15 @@
 .container {
   margin: 0 auto;
-  width: 260px;
-  padding: 0 30px;
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  outline: 1px solid yellow;
+
+  &--spaceless {
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0;
+  }
 }
