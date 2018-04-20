@@ -9,7 +9,6 @@
 
     <header class="page-header">
       <a class="page-heder__logo-link">
-        
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
       <nav class="main-nav">
@@ -97,7 +96,7 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="reviews__titlesection-title">Отзывы</h2>
+          <h2 class="reviews__title section-title">Отзывы</h2>
           <div class="reviews__list slider__list">
             <div class="reviews__item slider__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -117,17 +116,17 @@
         <div class="contacts-and-feedback__contacts contacts">
           <h3 class="contacts__title">Контакты</h3>
           <ul class="contacts__list">
-            <li class="contacts__item">
+            <li class="contacts__list-item">
               <span class="contacts__field">e-mail:</span>
               <span class="contacts__value contacts__value--email">info@mimimishkashop.ru</span>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__list-item">
               <span class="contacts__field">адрес:</span>
-              <span class="contacts__value contacts__value--address">г. Санкт-Петербург,<br>ул. Большая Конюшенная, д. 19/8, офис 101</span>
+              <span class="contacts__value contacts__value--address">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
             </li>
           </ul>
         </div>
-          <img class="contacts-and-feedback__map-image" src="http://placehold.it/150x100" width="" height="" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
+          <img class="contacts-and-feedback__map-image" src="img/map-mobile@1x.jpg" width="320" height="457" alt="г. Санкт-Петербург,ул. Большая Конюшенная, д. 19/8, офис 101">
         <a class="contacts-and-feedback__feedback button" href="#">Напишите нам</a>
       </section>
     </main>
@@ -149,7 +148,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
+          <img class="copyright__logo" src="http://placehold.it/27x33" width="" height="" alt="HTML Academy">
         </a>
       </div>
     </footer>
@@ -158,12 +157,18 @@
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="visually-hidden" type="radio" name="size" value="Small" id="small-size" checked>
-        <label class="modal__size" for="small-size">S</label>
-        <input class="visually-hidden" type="radio" name="size" value="Medium" id="medium-size">
-        <label class="modal__size" for="medium-size">M</label>
-        <input class="visually-hidden" type="radio" name="size" value="Large" id="large-size">
-        <label class="modal__size" for="large-size">L</label>
+        <label class="modal__toggle">
+          <input class="visually-hidden" type="radio" name="size" value="Small" checked>
+          <span class="modal__label">S</span>
+        </label>
+        <label class="modal__toggle">
+          <input class="visually-hidden" type="radio" name="size" value="Medium">
+          <span class="modal__label">M</span>
+        </label>
+        <label class="modal__toggle">
+          <input class="visually-hidden" type="radio" name="size" value="Large">
+          <span class="modal__label">L</span>
+        </label>
         <button class="modal__add-to-cart button button--green" type="submit">Добавить</button>
       </form>
     </section>

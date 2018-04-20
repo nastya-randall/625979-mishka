@@ -1,22 +1,23 @@
 .week-item {
-  display: flex;
-  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
   padding-top: 32px;
   padding-left: 30px;
-  padding-right: 40px;
+  padding-right: 30px;
   padding-bottom: 36px;
   color: #444444;
   font-size: 15px;
   line-height: 24px;
+  outline: 2px solid red;
 }
 
 .week-item__title {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin: 0;
 }
 
 .week-item__title-note {
+  display: block;
   margin-top: 5px;
   margin-bottom: 24px;
   color: #63d1bb;
@@ -28,18 +29,21 @@
 }
 
 .week-item__description {
+  display: block;
   margin: 0;
   margin-bottom: 24px;
 }
 
 .week-item__stats {
+  display: block;
   margin-bottom: 28px;
 }
 
 .week-item__price {
+  display: block;
+  text-align: center;
   margin: 25px auto;
-  margin-left: auto;
-  margin-right: auto;
+
   font-size: 17px;
   font-weight: 700;
 }
