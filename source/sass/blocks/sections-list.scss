@@ -1,0 +1,27 @@
+.sections-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sections-list__item {
+  &--home {
+    background-color: #63d1bb;
+  }
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
+.sections-list__item-link {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 185px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}

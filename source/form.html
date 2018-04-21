@@ -3,62 +3,79 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-heder__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="" height="" alt="Магазин «Мишка»">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
+          <button class="main-nav__close" type="button">Закрыть меню</button>
           <ul class="main-nav__list site-list">
-            <button class="main-nav__close" type="button">Закрыть меню</button>
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a>Вязание на заказ</a>
+              <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item site-list__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a class="site-list__item-link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item site-list__item--cart">
-              <a>Корзина: пока пуста</a>
+              <a class="site-list__item-link">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <main class="main-page">
-      <h1 class="main-page__title">Вязание на заказ</h1>
+    <main class="form-main container">
+      <h1 class="form-main__title">Вязание на заказ</h1>
       <section class="form">
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form__field" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
             <legend class="form__legend">Тип</legend>
-            <input class="visually-hidden" type="radio" name="type" value="home" id="home" checked>
-            <label class="form__label" for="home">Аксессуар для интерьера</label>
-            <input class="visually-hidden" type="radio" name="type" value="toy" id="toy" checked>
-            <label class="form__label" for="toy">Детская игрушка</label>
+            <label class="form__label">
+              <input class="visually-hidden" type="radio" name="type" value="home" checked>
+              <span class="form__label-text">Аксессуар для интерьера</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="radio" name="type" value="toy">
+              <span class="form__label-text">Детская игрушка</span>
+            </label>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">Цвет</legend>
-            <input class="visually-hidden" type="checkbox" name="white" id="white-color" checked>
-            <label class="form__label" for="white-color">Белый</label>
-            <input class="visually-hidden" type="checkbox" name="gray" id="gray-color" checked>
-            <label class="form__label" for="gray-color">Серый</label>
-            <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany-color">
-            <label class="form__label" for="tiffany-color">«Тиффани»</label>
-            <input class="visually-hidden" type="checkbox" name="black" id="black-color">
-            <label class="form__label" for="black-color">Черный</label>
-            <input class="visually-hidden" type="checkbox" name="pink" id="pink-color">
-            <label class="form__label" for="pink-color">Розовый</label>
-            <input class="visually-hidden" type="checkbox" name="orange" id="orange-color">
-            <label class="form__label" for="orange-color">Оранжевый</label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="white" checked>
+              <span class="form__label-text">Белый</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="gray" checked>
+              <span class="form__label-text">Серый</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="tiffany">
+              <span class="form__label-text">«Тиффани»</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="black">
+              <span class="form__label-text">Черный</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="pink">
+              <span class="form__label-text">Розовый</span>
+            </label>
+            <label class="form__label">
+              <input class="visually-hidden" type="checkbox" name="orange">
+              <span class="form__label-text">Оранжевый</span>
+            </label>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">ФИО</legend>
@@ -84,7 +101,8 @@
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__legend">Доп</legend>
-            <textarea class="form__user-message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <label class="visually-hidden">Сообщение пользователя</label>
+            <textarea class="form__user-message" placeholder="Опишите все ваши пожелания к заказу" id="user-message"></textarea>
           </fieldset>
           <p class="form__note">*Поля обязательны для заполнения</p>
           <button class="form__button button" type="submit">Отправить заказ</button>
@@ -92,7 +110,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -109,7 +127,7 @@
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__logo" src="http://placehold.it/150x100" width="" height="" alt="HTML Academy">
+          <img class="copyright__logo" src="http://placehold.it/27x33" width="" height="" alt="HTML Academy">
         </a>
       </div>
     </footer>

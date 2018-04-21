@@ -1,0 +1,11 @@
+.page-header {
+//  width: 320px;
+//  padding: 22px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__logo-link {
+  margin-top: 22px;
+}

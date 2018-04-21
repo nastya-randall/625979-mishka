@@ -1,0 +1,49 @@
+.week-item {
+//  width: 320px;
+//  box-sizing: border-box;
+  padding-top: 32px;
+//  padding-left: 30px;
+//  padding-right: 30px;
+  padding-bottom: 36px;
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
+  outline: 2px solid red;
+}
+
+.week-item__title {
+  display: block;
+  margin: 0;
+}
+
+.week-item__title-note {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 24px;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.week-item__description {
+  display: block;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.week-item__stats {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.week-item__price {
+  display: block;
+  text-align: center;
+  margin: 25px auto;
+
+  font-size: 17px;
+  font-weight: 700;
+}
