@@ -1,5 +1,9 @@
-.page-main {
-//  width: 320px;
+.page-main__wrapper {
+  background-color: #f8f8f8;
+}
+
+.page-main__bg-wrapper {
+//  min-height: 283px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -17px;
@@ -7,8 +11,29 @@
 
 .page-main__title {
   display: inline-block;
-  margin: 75px 38px 118px 38px;
+  margin: 75px 8px 118px 8px;
   text-align: center;
   font-size: 27px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__bg-wrapper {
+    background-image: url("../../img/hero-desktop.jpg");
+  }
+  .page-main__title {
+    margin-top: 135px;
+    margin-bottom: 380px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    margin-top: 138px;
+    margin-bottom: 365px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

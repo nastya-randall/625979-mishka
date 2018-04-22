@@ -1,10 +1,54 @@
 .contacts-and-feedback {
-  width: 320px;
+  position: relative;
   padding-top: 38px;
   padding-bottom: 38px;
+  background-color: #ffffff;
+  outline: 1px dashed green;
 }
 
 .contacts-and-feedback__map-image {
-  margin-left: -30px;
+//  margin-left: -30px;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-and-feedback__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts-and-feedback__map-image {
+    width: 768px;
+    height: 457px;
+    margin-left: -50px;
+  }
+  
+  .contacts-and-feedback__button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-and-feedback {
+    padding-top: 150px;
+    padding-bottom: 105px;
+  }
+  .contacts-and-feedback__wrapper {
+    width: 350px;
+    margin-left: 174px;
+  }
+  .contacts-and-feedback__map-image {
+    width: 525px;
+    height: 457px;
+    position: absolute;
+    top: 71px;
+    right: 100px;
+  }
+  
+  .contacts-and-feedback__button {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

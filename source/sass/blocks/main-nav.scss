@@ -1,3 +1,42 @@
-.main-nav__wrapper {
-//  display: none;
+.main-nav__logo-link {
+  min-height: 80px;
+  outline: 1px dashed green;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav__logo-link {
+    min-height: 88px;
+    width: 320px;
+    padding-top: 22px;
+    box-sizing: border-box;
+  }
+
+  .main-nav__toggle,
+  .main-nav__close {
+    display: none;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    order: 4;
+    position: absolute;
+    right: 50px;
+    top: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-link {
+    order: 2;
+    width: 230px;
+  }
 }

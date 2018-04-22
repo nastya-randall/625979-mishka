@@ -1,4 +1,4 @@
-.site-list {
+.user-list {
   min-height: 160px;
   padding: 0;
   margin: 0;
@@ -9,7 +9,7 @@
   line-height: 24px;
 }
 
-.site-list__item-link {
+.user-list__item-link {
   display: inline-block;
   padding: 28px 0px;
   color: #000000;
@@ -17,30 +17,24 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list {
-    min-height: 20px;
+  .user-list {
+    order: 2;
+    min-height: 88px;
     display: flex;
-    order: 3;
-    font-size: 15px;
   }
-
-  .site-list__item {
-    width: 160px;
-//    margin-right: 37px;
-  }
-  
-  .site-list__item-link {
-    padding: 20px 0px;
+  .user-list__item {
+    &--search {
+      width: 84px;
+      box-sizing: border-box;
+      font-size: 0;
+      border: 1px solid #ececec;
+    }
+    &--cart {
+      width: 264px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .site-list {
-    order: 1;
-    font-size: 17px;
-  }
-
-  .site-list__item {
-    width: 235px;
-  }
+  
 }

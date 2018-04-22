@@ -1,11 +1,22 @@
 .page-header {
-//  width: 320px;
-//  padding: 22px 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
+  background-color: #ffffff;
 }
 
-.page-header__logo-link {
-  margin-top: 22px;
+
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 88px;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+  }
+  
 }
+
+
