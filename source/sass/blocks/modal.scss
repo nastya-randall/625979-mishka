@@ -54,3 +54,24 @@
 .modal__form input:checked + .modal__label {
   border-color: #63d1bb;
 }
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    padding: 38px 106px 46px 106px;
+    
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+  }
+  
+  .modal__text {
+    font-size: 17px;
+  }
+  
+  .modal__toggle {
+    width: 112px;
+  }
+}

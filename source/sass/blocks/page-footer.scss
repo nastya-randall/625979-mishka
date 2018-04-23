@@ -5,3 +5,20 @@
 .page-footer__wrapper {
   padding: 25px 30px 30px;
 }
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}

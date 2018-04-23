@@ -12,3 +12,11 @@
   font-weight: 700;
   line-height: 18px;
 }
+
+@media (min-width: $tablet-width){
+  .copyright {
+    padding: 0;
+    min-width: 185px;
+  }
+  
+}

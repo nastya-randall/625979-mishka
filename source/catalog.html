@@ -8,34 +8,45 @@
   <body>
 
     <header class="page-header container">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-      </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
+        <a class="main-nav__logo-link">
+          <img class="main-nav__logo-image" href="index.html" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <button class="main-nav__close" type="button">Закрыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item site-list__item--search">
-              <a class="site-list__item-link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item site-list__item--cart">
-              <a class="site-list__item-link">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__close" type="button">Закрыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item user-list__item--search">
+            <a class="user-list__item-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item user-list__item--cart">
+            <a class="user-list__item-link">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list promo-list">
+          <li class="promo-list__item">
+            <a class="promo-list__item-link" href="#">Новые поступления</a>
+          </li>
+          <li class="promo-list__item">
+            <a class="promo-list__item-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
 
     <main class="catalog-main">
-      <div class="catalog-main__wrapper container">
+      <div class="catalog-main__wrapper">
+        <div class="catalog-main__container container">
         <h1 class="catalog-main__title">Каталог товаров</h1>
+      </div>
       </div>
       <section class="catalog container">
         <ul class="catalog__list">
@@ -93,7 +104,12 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/102x34" width="" height="" alt="Магазин «Мишка»">
+      </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -112,6 +128,8 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__logo" src="http://placehold.it/27x33" width="" height="" alt="HTML Academy">
         </a>
+      </div>
+      </div>
       </div>
     </footer>
 

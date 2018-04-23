@@ -16,3 +16,14 @@
   height: 28px;
   outline: 1px solid yellow;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+
+  .social__list {
+    margin: 0;
+    min-width: 145px;
+  }
+}
