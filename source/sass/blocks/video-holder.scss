@@ -1,56 +1,110 @@
 .video-holder {
   margin-bottom: 58px;
-  
-  padding-left: 30px;
-  padding-right: 30px;
-  
-  border: 1px solid #ececec;
+  position: relative;
 }
 .video-holder__title {
   display: inline-block;
   margin: 0;
   margin-bottom: 22px;
-  padding-left: 90px;
+  padding-left: 57px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .video-holder__overlay {
-  margin-bottom: 28px;
+  box-sizing: border-box;
+  outline: 1px solid red;
+  margin-left: -34px;
+  margin-bottom: 30px;
 }
 
 .video-holder__wrapper {
-  padding: 0 34px;
-  padding-top: 25px;
-  padding-bottom: 33px;
+  padding: 25px 34px 33px 34px;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
 }
 
 .video-holder__text {
+  margin: 0;
   margin-bottom: 25px;
+  padding: 0;
   color: #444444;
   font-size: 13px;
   line-height: 24px;
 }
 
 @media (min-width: $tablet-width) {
-.video-holder {
+  .video-holder {
+    padding-top: 455px;
+  }
+
+  .video-holder__wrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 41px;
+    padding-bottom: 46px;
+    padding-left: 42px;
+    padding-right: 42px;
   }
 
   .video-holder__title {
-    order: 2;
+    padding-left: 65px;
     font-size: 20px;
+    margin-bottom: 34px;
+  }
+
+  .video-holder__overlay {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 50px;
   }
 
   .video-holder__overlay video {
     width: 668px;
     height: 455px;
-    outline: 1px solid red;
+  }
+
+  .video-holder__group {
+    padding: 0 42px;
   }
 
   .video-holder__text {
     font-size: 15px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-holder {
+    padding-left: 782px;
+    padding-top: 0;
+    min-height: 455px;
+  }
+  
+  .video-holder__wrapper {
+    padding-left: 80px;
+    padding-right: 57px;
+    padding-top: 47px;
+    min-height: 455px;
+  }
+
+  .video-holder__title {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .video-holder__overlay {
+    left: 100px;
+  }
+  .video-holder__overlay video {
+    width: 682px;
+    height: 455px;
+  }
+
+  .video-holder__text {
+    margin-bottom: 44px;
   }
 }
