@@ -1,7 +1,10 @@
 .video-holder {
   margin-bottom: 58px;
-  padding-top: 25px;
-  padding-bottom: 33px;
+  
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  border: 1px solid #ececec;
 }
 .video-holder__title {
   display: inline-block;
@@ -19,6 +22,8 @@
 
 .video-holder__wrapper {
   padding: 0 34px;
+  padding-top: 25px;
+  padding-bottom: 33px;
 }
 
 .video-holder__text {
@@ -26,4 +31,26 @@
   color: #444444;
   font-size: 13px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+.video-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-holder__title {
+    order: 2;
+    font-size: 20px;
+  }
+
+  .video-holder__overlay video {
+    width: 668px;
+    height: 455px;
+    outline: 1px solid red;
+  }
+
+  .video-holder__text {
+    font-size: 15px;
+  }
 }
