@@ -9,9 +9,14 @@
   line-height: 24px;
 }
 
+.user-list__item {
+  border-bottom: 1px solid #ececec;
+}
+
 .user-list__item-link {
   display: inline-block;
-  padding: 28px 0px;
+  padding: 28px 76px;
+  padding-right: 35px;
   color: #000000;
   text-decoration: none;
 }

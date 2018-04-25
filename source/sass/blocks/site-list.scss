@@ -7,11 +7,16 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  border-top: 1px solid #ececec;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #ececec;
 }
 
 .site-list__item-link {
   display: inline-block;
-  padding: 28px 0px;
+  padding: 28px 76px;
   color: #000000;
   text-decoration: none;
 }
@@ -26,7 +31,6 @@
 
   .site-list__item {
     width: 160px;
-//    margin-right: 37px;
   }
   
   .site-list__item-link {
