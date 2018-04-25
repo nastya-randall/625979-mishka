@@ -1,11 +1,31 @@
-.form-main {
-  margin-bottom: 55px;
+.form-main__wrapper {
+  background-color: #f1f1f1;
+}
+
+.form-main__container {
+  display: flex;
 }
 
 .form-main__title {
-  margin: 0;
+  margin: 75px auto 79px auto;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main__title {
+    margin-top: 100px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main__title {
+    margin-bottom: 92px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

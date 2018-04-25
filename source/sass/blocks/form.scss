@@ -1,7 +1,11 @@
+.form {
+  padding-top: 24px;
+  padding-bottom: 55px;
+}
+
 .form__text {
   margin: 0;
-  margin-top: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #444444;
   font-size: 13px;
   line-height: 24px;
@@ -9,50 +13,77 @@
 
 .form__group {
   padding: 0;
-  border: none;
+  margin: 0;
+  margin-bottom: 10px;
+  border:none;
+  &--tel {
+    margin-bottom: 34px;
+  }
+  &--email {
+    margin-bottom: 34px;
+  }
+  outline: 1px solid red;
 }
 
 .form__legend {
   margin-bottom: 27px;
+  display: block;
   text-transform: uppercase;
   color: #63d1bb;
+  font-weight: 700;
+  line-height: 16px;
+  &--tel {
+    margin-bottom: 0px;
+  }
+  &--email {
+    margin-bottom: 0;
+  }
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 23px;
+  min-height: 40px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 16px;
 }
 
 .form__label-text {
-  display: block;
-  min-height: 40px;
-  margin-bottom: 22px;
+  display: inline-block;
   padding-left: 62px;
   font-size: 17px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 24px;
+  vertical-align: middle;
 }
 
-.form__label {
-    font-size: 17px;
-  font-weight: 700;
-  line-height: 16px;
+.form__group--user-name .form__label-text {
+  margin-right: 25px;
+  padding-left: 0;
 }
 
 .form__text-input {
   height: 53px;
-  margin-bottom: 25px;
+  box-sizing: border-box;
   font-size: 17px;
+  font-weight: 400;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid #000000;
 }
 
 .form__user-message {
-  margin-bottom: 17px;
+  margin: 0;
+  padding: 17px;
+  box-sizing: border-box;
   font-family: inherit;
   height: 142px;
   width: 100%;
   font-size: 17px;
   line-height: 18px;
   border: 2px solid #000000;
+  resize: none;
 }
 
 .form__note {
@@ -61,4 +92,156 @@
   color: #444444;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-top: 62px;
+  }
+
+  .form__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 55px;
+  }
+
+  .form__group {
+    padding-top: 50px;
+    padding-bottom: 27px;
+    &--color {
+      background-color: #f1f1f1;
+    }
+    &--user-contact {
+      background-color: #f1f1f1;
+      padding-bottom: 50px;
+    }
+  }
+
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    padding-left: 217px;
+//    &--user-name {
+////      display: block;
+//    }
+  }
+
+  .form__group--color .form__container {
+    flex-direction: row;
+  }
+
+  .form__legend {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    &--email {
+      top: 95px;
+    }
+  }
+
+  .form__group--color .form__label {
+    width: 45%;
+  }
+
+  .form__label {
+    min-height: 52px;
+  }
+
+  .form__group--user-name .form__label {
+    display: flex;
+    width: 505px;
+}
+
+  .form__label-text {
+    display: inline-block;
+    margin-right: 0;
+    padding-left: 82px;
+    line-height: 52px;
+    vertical-align: middle;
+    font-size: 19px;
+  }
+
+  .form__text-input {
+    padding-left: 16px;
+    flex-grow: 2;
+    box-sizing: border-box;
+    font-size: 19px;
+    &--tel {
+      margin-bottom: 24px;
+    }
+  }
+
+  .form__group--user-contact .form__text-input {
+    background-color: #f1f1f1;
+  }
+
+  .form__user-message {
+    font-size: 19px;
+    height: 142px;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .form__note {
+    margin: auto 0;
+    order: 2;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .form__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 106px;
+  }
+
+  .form__group {
+    &--user-name {
+      padding-right: 0;
+    }
+  }
+
+  .form__text {
+    margin-left: 175px;
+    margin-right: 165px;
+  }
+
+  .form__container {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+
+  .form__group--color .form__container {
+    padding-right: 170px;
+  }
+
+  .form__legend {
+    left: 162px;
+  }
+
+  .form__group--color .form__label {
+    width: 33%;
+    outline: 1px solid pink;
+  }
+  
+  .form__group--user-name .form__label {
+    width: 700px;
+    box-sizing: border-box;
+    outline: 1px solid green;
+  }
+
+  .form__footer {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
 }
