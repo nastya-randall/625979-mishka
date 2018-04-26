@@ -1,5 +1,4 @@
 .site-list {
-  min-height: 160px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -21,20 +20,32 @@
   text-decoration: none;
 }
 
+.site-list__item-link[href] {
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
-    min-height: 20px;
     display: flex;
     order: 3;
     font-size: 15px;
+    border: none;
   }
 
   .site-list__item {
     width: 160px;
+    padding-top: 20px;
+    border: none;
   }
   
   .site-list__item-link {
-    padding: 20px 0px;
+    padding: 0;
   }
 }
 
