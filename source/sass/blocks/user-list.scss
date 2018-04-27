@@ -60,10 +60,11 @@
   .user-list {
     order: 2;
     display: flex;
+    padding-right: 50px;
+    border-bottom: 1px solid #ececec;
   }
 
   .user-list__item {
-    padding: 33px 31px;
     padding-right: 0;
     box-sizing: border-box;
     border: none;
@@ -77,17 +78,22 @@
   }
 
   .user-list__link {
-    padding: 0;
+    padding: 32px 31px;
     padding-left: 52px;
+    
+    &--cart {
+      padding-left: 83px;
+      padding-right: 0;
+    }
   }
 
   .user-list__search-icon,
   .user-list__cart-icon {
-    top: 0;
-    left: 0;
+    top: 35px;
+    left: 51;
   }
 }
 
 @media (min-width: $desktop-width) {
-  
+
 }

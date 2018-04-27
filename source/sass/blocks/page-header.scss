@@ -12,16 +12,19 @@
 
 
 @media (min-width: $tablet-width) {
+
   .page-header {
     width: 768px;
-//    height: 89px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 1250px;
     padding-left: 50px;
     padding-right: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
   }
-  
 }
 
 
