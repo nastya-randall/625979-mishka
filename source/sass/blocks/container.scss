@@ -1,15 +1,24 @@
 .container {
   margin: 0 auto;
   width: 320px;
+  box-sizing: border-box;
   padding-left: 30px;
-  padding-right: 30px;
-  box-sizing: border-box;
+    padding-right: 30px;
   outline: 1px solid yellow;
+}
 
-  &--spaceless {
-  margin: 0 auto;
-  width: 320px;
-  box-sizing: border-box;
-  padding: 0;
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $desktop-width;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

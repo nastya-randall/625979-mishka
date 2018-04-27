@@ -1,19 +1,18 @@
 .week-item {
-//  width: 320px;
-//  box-sizing: border-box;
+  position: relative;
   padding-top: 32px;
-//  padding-left: 30px;
-//  padding-right: 30px;
   padding-bottom: 36px;
   color: #444444;
   font-size: 15px;
   line-height: 24px;
+  background-color: #ffffff;
   outline: 2px solid red;
 }
 
 .week-item__title {
   display: block;
   margin: 0;
+  outline: 1px dashed red;
 }
 
 .week-item__title-note {
@@ -46,4 +45,70 @@
 
   font-size: 17px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .week-item {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .week-item__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  .week-item__title-note {
+    width: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 17px;
+    text-align: center;
+  }
+  .week-item__card {
+    width: 292px;
+    min-height: 404px;
+    display: flex;
+    flex-direction: column;
+  }
+  .week-item__image {
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    width: 333px;
+    height: 404px;
+  }
+  .week-item__price {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-item {
+    padding-top: 115px;
+  }
+  .week-item__title {
+    position: relative;
+    justify-content: flex-start;
+//    margin-bottom: 45px;
+    z-index: 5;
+  }
+  .week-item__title-main {
+    order: 2;
+    margin-left: 58px;
+  }
+  .week-item__title-note {
+    margin-left: 47px;
+  }
+  .week-item__card {
+    min-height: 476px;
+    margin-left: 175px;
+  }
+  .week-item__image {
+    position: absolute;
+    top: 55px;
+    right: 100px;
+    width: 525px;
+    height: 636px;
+  }
 }

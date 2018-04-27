@@ -1,6 +1,7 @@
 .features {
   padding-top: 32px;
   padding-bottom: 28px;
+  background-color: #ffffff;
 }
 
 .features__list {
@@ -19,4 +20,38 @@
 
 .features__description {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .features__list-item {
+    width: 300px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    
+    &:nth-child(2),
+    &:nth-child(5) {
+      order: 2;
+    }
+
+    &:nth-child(3),
+    &:nth-child(6) {
+      order: 3;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__title {
+    margin-left: 175px;
+  }
+  .features__list {
+    margin-right: 200px;
+    margin-left: 175px;
+  }
 }
