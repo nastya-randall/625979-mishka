@@ -1,18 +1,27 @@
 .week-item {
   position: relative;
-  padding-top: 32px;
-  padding-bottom: 36px;
+  padding-top: 30px;
+  padding-bottom: 40px;
   color: #444444;
   font-size: 15px;
   line-height: 24px;
   background-color: #ffffff;
-  outline: 2px solid red;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: auto 6px;
+  }
 }
 
 .week-item__title {
   display: block;
   margin: 0;
-  outline: 1px dashed red;
 }
 
 .week-item__title-note {
@@ -30,33 +39,68 @@
 .week-item__description {
   display: block;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .week-item__stats {
-  display: block;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
+}
+
+.week-item__stats tbody {
+  display: flex;
+  flex-direction: column;
+}
+
+.week-item__stats tr {
+  margin-bottom: 8px;
+  display: flex;
+  width: 260px;
+  border-bottom: 1px solid #ececec;
+}
+
+.week-item__stats td {
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+.week-item__field {
+  min-width: 96px;
+}
+
+.week-item__value {
+  padding-left: 28px;
 }
 
 .week-item__price {
   display: block;
   text-align: center;
-  margin: 25px auto;
-
+  margin-top: 17px;
+  margin-bottom: 27px;
   font-size: 17px;
   font-weight: 700;
 }
 
 @media (min-width: $tablet-width) {
+
   .week-item {
+    padding-top: 35px;
+    padding-bottom: 70px;
     font-size: 17px;
     line-height: 30px;
+
+    &::after {
+      width: 100%;
+      height: 17px;
+      background-size: auto 17px;
+    }
   }
+
   .week-item__title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 45px;
+    align-content: center;
+    margin-bottom: 49px;
+    padding-right: 30px;
   }
   .week-item__title-note {
     width: 70px;
@@ -65,48 +109,87 @@
     line-height: 17px;
     text-align: center;
   }
+
   .week-item__card {
     width: 292px;
     min-height: 404px;
     display: flex;
     flex-direction: column;
   }
+
+  .week-item__description {
+    margin-bottom: 40px;
+  }
+
+  .week-stats {
+    margin-bottom: 0;
+  }
+
+  .week-item__stats tr {
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .week-item__stats td {
+    padding-bottom: 5px;
+  }
+
   .week-item__image {
     position: absolute;
-    top: 130px;
+    top: 142px;
     right: 50px;
     width: 333px;
     height: 404px;
   }
+
   .week-item__price {
     margin-top: auto;
+    margin-bottom: 27px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .week-item {
     padding-top: 115px;
+    padding-bottom: 100px;
+
+    &::after {
+      width: 1050px;
+      height: 24px;
+      left: 100px;
+      background-size: auto 24px;
+    }
   }
+
   .week-item__title {
     position: relative;
     justify-content: flex-start;
-//    margin-bottom: 45px;
     z-index: 5;
   }
+
   .week-item__title-main {
     order: 2;
     margin-left: 58px;
   }
+
   .week-item__title-note {
     margin-left: 47px;
   }
+
   .week-item__card {
     min-height: 476px;
     margin-left: 175px;
   }
+
+  .week-item__description {
+    margin-bottom: 52px;
+  }
+
   .week-item__image {
     position: absolute;
-    top: 55px;
+    top: 64px;
     right: 100px;
     width: 525px;
     height: 636px;
