@@ -110,10 +110,15 @@
   .main-nav__toggle {
     display: none;
   }
+  
+  .main-nav__list {
+    z-index: 5;
+  }
 
   .main-nav__delivery {
     display: block;
     order: 4;
+    z-index: 5;
     font-size: 15px;
     line-height: 24px;
     margin-left: auto;
