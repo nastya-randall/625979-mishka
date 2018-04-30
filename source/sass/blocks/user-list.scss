@@ -8,7 +8,7 @@
   line-height: 24px;
 }
 
-.user-list__item {
+.user-list__item:not(:last-child) {
   border-bottom: 1px solid #ececec;
 }
 

@@ -1,11 +1,17 @@
 .catalog__list {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
   list-style: none;
 }
 
 .catalog__item {
   margin-bottom: 30px;
+}
+
+.catalog__item-link {
+  display: block;
+  font-size: 0;
 }
 
 .catalog__item-wrapper {
@@ -84,6 +90,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .catalog__list {
     display: flex;
     justify-content: space-between;
