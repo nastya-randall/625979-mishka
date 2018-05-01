@@ -8,7 +8,7 @@
     order: 4;
     padding: 0;
     padding-left: 50px;
-    padding-top: 20px;
+    padding-top: 17px;
     margin: 0;
     list-style: none;
     color: #000000;
@@ -16,7 +16,7 @@
     font-weight: 700;
     line-height: 24px;
 }
-  
+
   .promo-list__item {
     margin-right: 62px;
   }
@@ -25,5 +25,15 @@
     display: inline-block;
     color: #000000;
     text-decoration: none;
+  }
+
+  .promo-list__item-link[href] {
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

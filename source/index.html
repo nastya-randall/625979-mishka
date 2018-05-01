@@ -101,7 +101,7 @@
             </picture>
           </p>
           <span class="week-item__price">Цена: 990 руб.</span>
-          <a class="week-item__order button" href="#">Заказать</a>
+          <a class="week-item__order button add-to-cart" href="#">Заказать</a>
         </div>
       </section>
       <section class="features container">
@@ -203,7 +203,8 @@
 <!--      </div>-->
     </footer>
 
-    <section class="modal container">
+    <section class="modal">
+      <div class="modal__popup">
       <h2 class="modal__title">Добавить в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
@@ -221,6 +222,7 @@
         </label>
         <button class="modal__add-to-cart button button--green" type="submit">Добавить</button>
       </form>
+      </div>
     </section>
 
     <script src="js/script.js"></script>
