@@ -21,11 +21,23 @@
 
   .page-footer__social {
     margin-left: 76px;
-    outline: 1px solid red;
   }
 
   .page-footer__logo {
     display: block;
+    cursor: pointer;
+  }
+  
+  .page-footer__logo-image {
+    fill: #000000;
+  }
+
+  .page-footer__logo:hover .page-footer__logo-image {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo:active .page-footer__logo-image {
+    opacity: 0.3;
   }
 }
 

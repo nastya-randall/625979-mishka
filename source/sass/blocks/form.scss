@@ -14,8 +14,12 @@
 .form__group {
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   border:none;
+  
+  &--color {
+    margin-bottom: 18px;
+  }
 
   &--user-name {
     margin-bottom: 11px;
@@ -162,7 +166,7 @@
 .form__text-input {
   width: 100%;
   padding-top: 17px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   box-sizing: border-box;
   font-size: 17px;
   font-weight: 400;
@@ -210,7 +214,35 @@
   line-height: 16px;
 }
 
+.form__group--user-contact .form__container {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  fill: #000000;
+  opacity: 0.2;
+  
+  &--tel {
+    top: 35px;
+    right: 38px;
+  }
+  
+  &--email {
+    top: 141px;
+    right: 35px;
+  }
+}
+
+.form__text-input:hover + .form__icon,
+.form__text-input:active + .form__icon,
+.form__text-input:focus + .form__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
 @media (min-width: $tablet-width) {
+
   .form {
     padding-top: 60px;
     padding-bottom: 50px;
@@ -290,7 +322,7 @@
     vertical-align: middle;
     font-size: 19px;
   }
-  
+
   .form__label--user-name .form__label-text {
     margin-right: 25px;
   }
@@ -360,6 +392,18 @@
   .form__button {
     width: 230px;
   }
+
+  .form__icon {
+    &--tel {
+      top: 15px;
+      right: 76px;
+    }
+  
+    &--email {
+      top: 90px;
+      right: 72px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -405,5 +449,15 @@
     padding-top: 23px;
     padding-left: 275px;
     padding-right: 275px;
+  }
+
+  .form__icon {
+    &--tel {
+      right: 283px;
+    }
+  
+    &--email {
+      right: 280px;
+    }
   }
 }
