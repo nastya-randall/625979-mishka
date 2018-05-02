@@ -1,4 +1,8 @@
 .catalog-sections {
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
 }
 
@@ -15,35 +19,125 @@
   &--toys {
     background-color: #56c3b2;
   }
+
+  &:hover {
+    margin-top: -5px;
+  }
 }
 
 .catalog-sections__item-link {
+  position: relative;
   display: inline-block;
   padding-left: 30px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  width: 100%;
+  box-sizing: border-box;
   color: #ffffff;
   text-decoration: none;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+
+  &--home::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 41px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    opacity: 0.5;
+  }
+
+  &--toys::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    opacity: 0.5;
+  }
+
+  &:hover {
+    padding-bottom: 34px;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+//  .catalog-sections__item-link:hover + .week-item {
+//  margin-top: 5px;
+//    }
 }
 
+
 @media (min-width: $tablet-width) {
+
+  .catalog-sections {
+    width: 668px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: -50px;
+      width: 768px;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 24px;
+    }
+  }
+
   .catalog-sections__list {
     display: flex;
   }
 
   .catalog-sections__item {
     flex-grow: 1;
+    width: 50%;
   }
 
   .catalog-sections__item-link {
+    padding-left: 36px;
+    padding-top: 28px;
+    padding-bottom: 40px;
     font-size: 20px;
     line-height: 30px;
+  
+    &--home::after {
+      top: 30px;
+      right: 35px;
+      }
+
+      &--toys::after {
+      top: 30px;
+      right: 34px;
+      }
   }
 }
 
 @media (min-width: $desktop-width) {
-  
+
+  .catalog-sections {
+    width: 1250px;
+    padding: 0 100px;
+
+    &::after {
+      width: 100%;
+      height: 34px;
+      background-size: 1150px 34px;
+      background-position: 7px center;
+      left: 0;
+      bottom: -7px;
+    }
+  }
 }

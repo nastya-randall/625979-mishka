@@ -1,22 +1,30 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0;
   background-color: #ffffff;
 }
 
 
 
 @media (min-width: $tablet-width) {
+
   .page-header {
-    height: 88px;
+    width: 768px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 1250px;
     padding-left: 50px;
     padding-right: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
   }
-  
 }
 
 

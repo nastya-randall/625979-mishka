@@ -1,12 +1,15 @@
 .social {
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 18px;
 }
 
 .social__list {
-  margin: 0 60px 30px 52px;
+  margin: 0;
   padding: 0;
+  padding: 0 40px;
+  padding-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   font-size: 0;
 }
@@ -20,10 +23,13 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+    margin-bottom: 0;
   }
 
   .social__list {
     margin: 0;
     min-width: 145px;
+    padding: 0;
+    justify-content: space-between;
   }
 }

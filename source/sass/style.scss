@@ -1,6 +1,6 @@
 @import "blocks/variables.scss";
+@import "scaffolding.scss";
 @import "blocks/page-header.scss";
-@import "blocks/visually-hidden.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 @import "blocks/user-list.scss";
@@ -24,28 +24,3 @@
 @import "blocks/video-holder.scss";
 @import "blocks/form-main.scss";
 @import "blocks/form.scss";
-
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-       url("opensans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-       url("opensansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-body {
-  min-width: 320px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  background-color: #ffffff;
-}
