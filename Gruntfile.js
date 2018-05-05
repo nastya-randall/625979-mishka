@@ -4,14 +4,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
-    sass: {
-      style: {
-        files: {
-          "build/css/style.css": "source/sass/style.scss"
-        }
-      }
-    },
-
     copy: {
       build: {
         files: [{
@@ -29,6 +21,14 @@ module.exports = function(grunt) {
 
     clean: {
       build: ["build"]
+    },
+
+    sass: {
+      style: {
+        files: {
+          "build/css/style.css": "source/sass/style.scss"
+        }
+      }
     },
 
     postcss: {
@@ -50,6 +50,32 @@ module.exports = function(grunt) {
         files: {
           "build/css/style.min.css": ["build/css/style.css"]
         }
+      }
+    },
+
+    svgstore: {
+      options: {
+        includeTitleElement: false
+      },
+      sprite: {
+        files: {
+          "build/img/sprite.svg": ["source/img/spr-*.svg"]
+        }
+      }
+    },
+
+    posthtml: {
+      options: {
+        use: [
+          require("posthtml-include")()
+        ]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["source/*.html"],
+          dest: "build"
+        }]
       }
     },
 
@@ -78,25 +104,16 @@ module.exports = function(grunt) {
       }
     },
 
-//    posthtml: {
-//      options: {
-//        use: [
-//          require("posthtml-include")()
-//        ]
-//      },
-//      html: 
-//    }
-
     browserSync: {
       server: {
         bsFiles: {
           src: [
-            "source/*.html",
-            "source/css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: "source/",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
@@ -107,9 +124,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["source/*.html"],
+        tasks: ["posthtml"]
+      },
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"]
+        tasks: ["sass", "postcss", "csso"]
       }
     }
   });
@@ -122,7 +143,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
-//    "svgstore",
-//    "posthtml"
+    "svgstore",
+    "posthtml"
   ]);
 };
