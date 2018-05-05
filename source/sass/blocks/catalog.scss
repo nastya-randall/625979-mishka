@@ -68,13 +68,12 @@
 }
 
 .catalog__cart-icon {
+  fill: #000000;
   opacity: 0.2;
 
   &:hover {
     opacity: 1;
-    path {
-      fill: #63d1bb;
-    }
+    fill: #63d1bb;
   }
 
   &:active {

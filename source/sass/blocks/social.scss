@@ -15,10 +15,25 @@
 }
 
 .social__item {
-  width: 23px;
-  height: 28px;
-  outline: 1px solid yellow;
+//  width: 23px;
+//  height: 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
+
+.social__icon {
+  fill: #000000;
+}
+
+.social__link:hover .social__icon {
+  fill: #46c1ae;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .social {
