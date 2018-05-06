@@ -15,7 +15,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .form-main {
     margin-top: -42px;
   }
@@ -35,6 +34,7 @@
       background-position: -3px center;
     }
   }
+
   .form-main__title {
     margin-top: 93px;
     margin-bottom: 95px;
@@ -44,14 +44,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  
   .form-main__container {
-    &:after {
+    &::after {
       height: 34px;
       background-size: auto 34px;
     }
   }
-  
+
   .form-main__title {
     margin-bottom: 122px;
     font-size: 53px;

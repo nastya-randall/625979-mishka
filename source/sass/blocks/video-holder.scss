@@ -9,7 +9,6 @@
   padding-bottom: 32px;
   box-sizing: border-box;
   border: 1px solid #ececec;
-  box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -49,7 +48,7 @@
   margin-bottom: 27px;
   box-sizing: border-box;
   font-size: 0;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -59,7 +58,7 @@
     height: 77px;
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
-    cursor: pointer; 
+    cursor: pointer;
   }
 
   &:hover::before {
@@ -87,7 +86,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .video-holder {
     padding-top: 455px;
     padding-bottom: 63px;
@@ -135,14 +133,13 @@
     margin-bottom: 35px;
     margin-right: 0;
   }
-  
+
   .video-holder__button {
     width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .video-holder {
     padding-left: 782px;
     padding-top: 0;
@@ -163,7 +160,7 @@
 
   .video-holder__overlay {
     left: 100px;
-    
+
     &::before {
       left: 291px;
     }

@@ -6,7 +6,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .features__list {
@@ -77,7 +77,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .features {
     padding-top: 47px;
     padding-bottom: 79px;
@@ -118,7 +117,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .features {
     padding-top: 54px;
     padding-bottom: 88px;

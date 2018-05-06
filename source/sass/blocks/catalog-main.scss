@@ -17,7 +17,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog-main {
     margin-top: -42px;
   }
@@ -52,9 +51,9 @@
     font-size: 53px;
     line-height: 57px;
   }
-  
+
   .catalog-main__container {
-    &:after {
+    &::after {
       height: 34px;
       background-size: auto 34px;
     }
