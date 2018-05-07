@@ -4,9 +4,9 @@
 }
 
 .video-holder__wrapper {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-left: 33px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   box-sizing: border-box;
   border: 1px solid #ececec;
 
@@ -45,7 +45,7 @@
   position: relative;
   display: block;
   margin-left: -33px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   box-sizing: border-box;
   font-size: 0;
   cursor: pointer;
@@ -74,7 +74,7 @@
 
 .video-holder__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   margin-right: 33px;
   padding: 0;
   color: #444444;
@@ -95,7 +95,7 @@
   .video-holder__wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 37px;
     padding-bottom: 45px;
     padding-left: 41px;
     padding-right: 41px;
@@ -104,7 +104,7 @@
   .video-holder__title {
     padding-left: 63px;
     font-size: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     &::before {
       top: -3px;

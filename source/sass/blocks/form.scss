@@ -1,6 +1,6 @@
 .form {
   padding-top: 23px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
 }
 
 ::-webkit-contacts-auto-fill-button {
@@ -21,7 +21,7 @@
 .form__group {
   padding: 0;
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   border: none;
 
   &--color {
@@ -29,7 +29,7 @@
   }
 
   &--user-name {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   &--user-contact {
@@ -55,11 +55,11 @@
   }
 
   &--user-name {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
 
   &--tel {
-    margin-bottom: 7px;
+    margin-bottom: 5px;
   }
 
   &--email {
@@ -89,7 +89,7 @@
   line-height: 16px;
 
   &--color {
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 
   &--color:last-child {
@@ -140,7 +140,7 @@
   top: -10px;
   left: 0;
   width: 40px;
-  height: 40px;
+  height: 39px;
   box-sizing: border-box;
   border: 2px solid #444444;
 }
@@ -215,7 +215,7 @@
 
 .form__note {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   color: #444444;
   font-size: 14px;
   line-height: 16px;
@@ -251,7 +251,7 @@
 @media (min-width: $tablet-width) {
   .form {
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
   }
 
   .form__text {
@@ -262,11 +262,12 @@
 
   .form__group {
     padding-top: 48px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
     margin-bottom: 0;
 
     &--color {
       background-color: #f1f1f1;
+      padding-bottom: 26px;
     }
 
     &--type {
@@ -276,6 +277,11 @@
     &--user-contact {
       background-color: #f1f1f1;
       padding-bottom: 50px;
+      padding-top: 47px;
+    }
+
+    &--user-name {
+      padding-bottom: 28px;
     }
   }
 
@@ -310,7 +316,7 @@
     min-height: 52px;
 
     &--color {
-      margin-bottom: 23px;
+      margin-bottom: 25px;
       width: 48%;
     }
   }
@@ -369,7 +375,7 @@
     font-size: 19px;
 
     &--tel {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
   }
 
@@ -386,7 +392,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 28px;
+    padding-top: 29px;
   }
 
   .form__note {
@@ -415,7 +421,7 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    padding-top: 103px;
+    padding-top: 104px;
   }
 
   .form__group {
@@ -453,7 +459,7 @@
   }
 
   .form__footer {
-    padding-top: 23px;
+    padding-top: 25px;
     padding-left: 275px;
     padding-right: 275px;
   }

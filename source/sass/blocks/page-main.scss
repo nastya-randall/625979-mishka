@@ -18,11 +18,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main {
-//    margin-top: -42px;
-    position: relative;
-  }
-  
   .page-main__wrapper {
     margin-top: -42px;
   }
@@ -45,13 +40,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main {
-    margin-top: -44px;
-  }
-
   .page-main__title {
     margin-top: 154px;
-    margin-bottom: 360px;
+    margin-bottom: 359px;
     font-size: 53px;
     line-height: 57px;
   }

@@ -6,7 +6,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .features__list {
@@ -21,8 +21,7 @@
 
 .features__list-item {
   position: relative;
-  padding-top: 82px;
-  margin-bottom: 1px;
+  padding-top: 83px;
 
   &::before {
     content: "";
@@ -79,7 +78,7 @@
 @media (min-width: $tablet-width) {
   .features {
     padding-top: 47px;
-    padding-bottom: 79px;
+    padding-bottom: 78px;
   }
 
   .features__title {
@@ -97,7 +96,7 @@
     width: 300px;
     box-sizing: border-box;
     margin-right: 33px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     padding-top: 105px;
 
     &:nth-child(2),
