@@ -13,7 +13,6 @@ module.exports = function(grunt) {
             "fonts/**/*.{woff,woff2}",
             "img/**",
             "js/**",
-            "*.html"
           ],
           dest: "build"
         }]
@@ -74,7 +73,8 @@ module.exports = function(grunt) {
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
+          cwd: "source/",
+          src: ["*.html"],
           dest: "build"
         }]
       }
