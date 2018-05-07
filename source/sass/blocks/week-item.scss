@@ -29,7 +29,7 @@
 .week-item__title-note {
   display: block;
   margin-top: 5px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
@@ -41,11 +41,11 @@
 .week-item__description {
   display: block;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .week-item__stats {
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 
 .week-item__stats tbody {
@@ -54,7 +54,7 @@
 }
 
 .week-item__stats tr {
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   display: flex;
   width: 260px;
   border-bottom: 1px solid #ececec;
@@ -62,7 +62,7 @@
 
 .week-item__stats td {
   padding: 0;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 }
 
 .week-item__field {
@@ -76,8 +76,8 @@
 .week-item__price {
   display: block;
   text-align: center;
-  margin-top: 17px;
-  margin-bottom: 27px;
+  margin-top: 19px;
+  margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
 }
@@ -114,7 +114,7 @@
 
   .week-item__card {
     width: 292px;
-    min-height: 404px;
+    min-height: 411px;
     display: flex;
     flex-direction: column;
   }
@@ -136,18 +136,26 @@
     padding-bottom: 5px;
   }
 
-  .week-item__image {
+  .week-item__image-wrapper {
     position: absolute;
+    margin: 0;
     top: 142px;
     right: 50px;
+  }
+
+  .week-item__image {
     width: 333px;
     height: 404px;
   }
 
   .week-item__price {
     margin-top: auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 20px;
+  }
+  
+  .week-item__order {
+    margin-top: 10px;
   }
 }
 
@@ -186,10 +194,6 @@
 
   .week-item__description {
     margin-bottom: 50px;
-  }
-
-  .week-item__price {
-    margin-bottom: 30px;
   }
 
   .week-item__image {
