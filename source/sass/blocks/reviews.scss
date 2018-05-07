@@ -117,12 +117,19 @@
     }
   }
 
+  .reviews__item {
+    width: 668px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .reviews__title {
     margin-bottom: 47px;
   }
 
   .reviews__text {
     margin-bottom: 60px;
+    width: 668px;
     font-size: 17px;
   }
 
@@ -171,6 +178,10 @@
       background-size: auto 24px;
       background-position: -30px center;
     }
+  }
+  
+  .reviews__item {
+    width: 877px;
   }
 
   .reviews__title {

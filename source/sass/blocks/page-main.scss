@@ -19,6 +19,11 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
+//    margin-top: -42px;
+    position: relative;
+  }
+  
+  .page-main__wrapper {
     margin-top: -42px;
   }
 

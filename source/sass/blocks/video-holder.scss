@@ -48,17 +48,18 @@
   margin-bottom: 27px;
   box-sizing: border-box;
   font-size: 0;
+  cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
     top: 36px;
     left: 79px;
+    z-index: 5;
     width: 101px;
     height: 77px;
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
-    cursor: pointer;
   }
 
   &:hover::before {
@@ -147,6 +148,7 @@
   }
 
   .video-holder__wrapper {
+    min-height: 455px;
     padding-left: 77px;
     padding-right: 57px;
     padding-top: 44px;
@@ -173,5 +175,9 @@
 
   .video-holder__text {
     margin-bottom: 46px;
+  }
+  
+  .video-holder__button {
+    margin-top: auto;
   }
 }
