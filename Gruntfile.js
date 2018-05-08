@@ -80,6 +80,31 @@ module.exports = function(grunt) {
       }
     },
 
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: {
+          "build/index.html": ["build/index.html"],
+          "build/catalog.html": ["build/catalog.html"],
+          "build/form.html": ["build/form.html"]
+        }
+      }
+    },
+
+    uglify: {
+      options: {
+        mangle: false
+      },
+      my_target: {
+        files: {
+          "build/js/script.min.js": ["build/js/script.js"]
+        }
+      }
+    },
+
     imagemin: {
       images: {
         options: {
@@ -145,6 +170,8 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "svgstore",
-    "posthtml"
+    "posthtml",
+    "htmlmin",
+    "uglify"
   ]);
 };
