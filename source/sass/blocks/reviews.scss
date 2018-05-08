@@ -122,6 +122,7 @@
     width: 668px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .reviews__title {
@@ -147,12 +148,6 @@
 
   .reviews__list {
     order: 3;
-  }
-
-  .reviews__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .reviews__toggle {
