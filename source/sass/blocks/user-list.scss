@@ -44,8 +44,8 @@
 
 .user-list__link[href]:hover .user-list__search-icon,
 .user-list__link[href]:hover .user-list__cart-icon {
-  opacity: 1;
   fill: #63d1bb;
+  opacity: 1;
 }
 
 .user-list__link[href]:active .user-list__search-icon,
@@ -55,13 +55,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .user-list {
     order: 2;
     display: flex;
     padding-right: 50px;
     border-bottom: 1px solid #ececec;
-    outline: 1x solid red;
   }
 
   .user-list__item {
@@ -80,7 +78,7 @@
   .user-list__link {
     padding: 31px 31px;
     padding-left: 52px;
-    
+
     &--cart {
       padding-left: 83px;
       padding-right: 0;
@@ -92,8 +90,4 @@
     top: 35px;
     left: 51;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

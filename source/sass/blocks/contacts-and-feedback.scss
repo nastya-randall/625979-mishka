@@ -3,13 +3,13 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-top: 35px;
-  padding-bottom: 38px;
+  padding-bottom: 39px;
   position: relative;
   background-color: #ffffff;
 }
 
 .contacts-and-feedback__contacts {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .contacts-and-feedback__map-wrapper {
@@ -39,10 +39,9 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts-and-feedback {
     width: 768px;
-    padding-top: 60px;
+    padding-top: 59px;
     padding-bottom: 57px;
     display: flex;
     flex-direction: column;
@@ -54,6 +53,7 @@
 
   .contacts-and-feedback__map-wrapper {
     margin-bottom: 50px;
+
     &::before {
       top: 139px;
       left: 364px;
@@ -74,10 +74,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts-and-feedback {
     width: 1250px;
-    padding-top: 140px;
+    padding-top: 141px;
     padding-bottom: 105px;
     padding-left: 100px;
     padding-right: 100px;

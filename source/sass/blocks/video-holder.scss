@@ -4,12 +4,11 @@
 }
 
 .video-holder__wrapper {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-left: 33px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
   box-sizing: border-box;
   border: 1px solid #ececec;
-  box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -46,20 +45,21 @@
   position: relative;
   display: block;
   margin-left: -33px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   box-sizing: border-box;
   font-size: 0;
-  
+  cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
     top: 36px;
     left: 79px;
+    z-index: 5;
     width: 101px;
     height: 77px;
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
-    cursor: pointer; 
   }
 
   &:hover::before {
@@ -74,7 +74,7 @@
 
 .video-holder__text {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   margin-right: 33px;
   padding: 0;
   color: #444444;
@@ -87,7 +87,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .video-holder {
     padding-top: 455px;
     padding-bottom: 63px;
@@ -96,7 +95,7 @@
   .video-holder__wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 35px;
+    padding-top: 37px;
     padding-bottom: 45px;
     padding-left: 41px;
     padding-right: 41px;
@@ -105,7 +104,7 @@
   .video-holder__title {
     padding-left: 63px;
     font-size: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 
     &::before {
       top: -3px;
@@ -135,14 +134,13 @@
     margin-bottom: 35px;
     margin-right: 0;
   }
-  
+
   .video-holder__button {
     width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .video-holder {
     padding-left: 782px;
     padding-top: 0;
@@ -150,6 +148,7 @@
   }
 
   .video-holder__wrapper {
+    min-height: 455px;
     padding-left: 77px;
     padding-right: 57px;
     padding-top: 44px;
@@ -163,7 +162,7 @@
 
   .video-holder__overlay {
     left: 100px;
-    
+
     &::before {
       left: 291px;
     }
@@ -176,5 +175,9 @@
 
   .video-holder__text {
     margin-bottom: 46px;
+  }
+
+  .video-holder__button {
+    margin-top: auto;
   }
 }

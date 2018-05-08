@@ -46,7 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts {
     position: relative;
     padding: 0;
@@ -61,7 +60,6 @@
       height: 81px;
       background-image: url("../../img/icon-flag.svg");
       background-repeat: no-repeat;
-      
     }
   }
 
@@ -83,17 +81,14 @@
   }
 
   .contacts__field {
-    margin-right: 24px;
+    margin-right: 25px;
   }
 }
 
-
-
 @media (min-width: $desktop-width) {
-
   .contacts {
     padding-left: 170px;
-    
+
     &::before {
       left: 63px;
       top: -9px;
@@ -104,14 +99,13 @@
     margin-bottom: 48px;
     font-size: 53px;
     line-height: 57px;
-    
   }
 
   .contacts__list {
     flex-direction: column;
     padding-left: 4px;
   }
-  
+
   .contacts__list-item {
     margin-bottom: 30px;
   }
