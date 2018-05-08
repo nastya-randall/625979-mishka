@@ -3,7 +3,6 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-
 }
 
 .catalog-sections__list {
@@ -16,6 +15,7 @@
   &--home {
     background-color: #63d1bb;
   }
+
   &--toys {
     background-color: #56c3b2;
   }
@@ -72,15 +72,9 @@
   &:active {
     opacity: 0.3;
   }
-
-//  .catalog-sections__item-link:hover + .week-item {
-//  margin-top: 5px;
-//    }
 }
 
-
 @media (min-width: $tablet-width) {
-
   .catalog-sections {
     width: 668px;
     position: relative;
@@ -112,21 +106,20 @@
     padding-bottom: 40px;
     font-size: 20px;
     line-height: 30px;
-  
+
     &--home::after {
       top: 30px;
       right: 35px;
-      }
+    }
 
-      &--toys::after {
+    &--toys::after {
       top: 30px;
       right: 34px;
-      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .catalog-sections {
     width: 1250px;
     padding: 0 100px;

@@ -7,7 +7,7 @@
 }
 
 .form-main__title {
-  margin: 70px auto 76px auto;
+  margin: 70px auto 77px auto;
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
@@ -15,8 +15,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-  .form-main {
+  .form-main__wrapper {
     margin-top: -42px;
   }
 
@@ -35,6 +34,7 @@
       background-position: -3px center;
     }
   }
+
   .form-main__title {
     margin-top: 93px;
     margin-bottom: 95px;
@@ -44,14 +44,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  
   .form-main__container {
-    &:after {
+    &::after {
       height: 34px;
-      background-size: auto 34px;
+      background-size: 1150px 34px;
     }
   }
-  
+
   .form-main__title {
     margin-bottom: 122px;
     font-size: 53px;

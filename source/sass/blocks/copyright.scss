@@ -14,20 +14,21 @@
   line-height: 18px;
 }
 
+.copyright__logo {
+  fill: #63d1bb;
+}
+
 .copyright__link:hover .copyright__logo {
-  path {
-    fill: #46c1ae;
-  }
+  fill: #46c1ae;
 }
 
 .copyright__link:active {
   opacity: 0.3;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
     min-width: 185px;
   }
-  
 }

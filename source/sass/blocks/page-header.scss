@@ -8,23 +8,16 @@
   background-color: #ffffff;
 }
 
-
-
 @media (min-width: $tablet-width) {
-
   .page-header {
     width: 768px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header {
     width: 1250px;
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-
-

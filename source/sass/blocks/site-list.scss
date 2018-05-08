@@ -37,6 +37,7 @@
     padding-left: 50px;
     font-size: 15px;
     border: none;
+    background-color: transparent;
   }
 
   .site-list__item {
@@ -45,7 +46,7 @@
     border: none;
     margin-right: 7px;
   }
-  
+
   .site-list__item-link {
     padding: 0;
   }
@@ -60,7 +61,6 @@
   }
 
   .site-list__item {
-//    width: 235px;
     padding: 0 35px;
     padding-top: 31px;
     padding-right: 25px;
