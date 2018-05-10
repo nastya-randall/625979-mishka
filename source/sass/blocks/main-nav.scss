@@ -97,7 +97,16 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .site-list {
+    display: block;
+  }
+
+  .main-nav--nojs .user-list {
+    display: block;
+  }
 }
+
 
 @media (min-width: $tablet-width) {
   .main-nav {
