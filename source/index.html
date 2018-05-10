@@ -232,25 +232,27 @@
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__text">Выберите размер:</p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="modal__toggle">
-          <input class="visually-hidden" type="radio" name="size" value="Small" checked>
-          <span class="modal__label">S</span>
-        </label>
-        <label class="modal__toggle">
-          <input class="visually-hidden" type="radio" name="size" value="Medium">
-          <span class="modal__label">M</span>
-        </label>
-        <label class="modal__toggle">
-          <input class="visually-hidden" type="radio" name="size" value="Large">
-          <span class="modal__label">L</span>
-        </label>
-        <button class="modal__add-to-cart button button--green" type="submit">Добавить</button>
-      </form>
+      <div class="modal__overlay"></div>
+      <div class="modal__popup">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="modal__toggle">
+            <input class="visually-hidden" type="radio" name="size" value="Small" checked>
+            <span class="modal__label">S</span>
+          </label>
+          <label class="modal__toggle">
+            <input class="visually-hidden" type="radio" name="size" value="Medium">
+            <span class="modal__label">M</span>
+          </label>
+          <label class="modal__toggle">
+            <input class="visually-hidden" type="radio" name="size" value="Large">
+            <span class="modal__label">L</span>
+          </label>
+          <button class="modal__add-to-cart button button--green" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
-    <div class="modal__overlay"></div>
 
     <script src="js/script.min.js"></script>
     <script src="js/picturefill.min.js"></script>
