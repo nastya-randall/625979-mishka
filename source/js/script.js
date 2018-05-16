@@ -5,6 +5,8 @@ var link = document.querySelector(".add-to-cart");
 var popup = document.querySelector(".modal");
 var overlay = document.querySelector(".modal__overlay");
 
+var catalogList = document.querySelector('.catalog__list');
+
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {
@@ -17,13 +19,13 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-if (link) {
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal--show");
-    overlay.classList.add("modal__overlay--show");
-  });
-};
+//if (link) {
+//  link.addEventListener("click", function (evt) {
+//    evt.preventDefault();
+//    popup.classList.add("modal--show");
+//    overlay.classList.add("modal__overlay--show");
+//  });
+//};
 
 if (overlay) {
   overlay.addEventListener("click", function (evt) {
@@ -43,4 +45,16 @@ window.addEventListener("keydown", function (evt) {
             overlay.classList.remove("modal__overlay--show");
         }
     }
+});
+
+var catalogList = document.querySelector('.catalog__list');
+catalogList.addEventListener('click', function (event) {
+  var target = event.target;
+  var targetParent = target.parentNode;
+
+  if (target.classList.contains('add-to-cart') || targetParent.classList.contains('add-to-cart')) {
+    console.log('yeah');
+    popup.classList.add("modal--show");
+    overlay.classList.add("modal__overlay--show");
+  }
 });
