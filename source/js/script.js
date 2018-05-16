@@ -19,13 +19,13 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-//if (link) {
-//  link.addEventListener("click", function (evt) {
-//    evt.preventDefault();
-//    popup.classList.add("modal--show");
-//    overlay.classList.add("modal__overlay--show");
-//  });
-//};
+if (link) {
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.add("modal--show");
+    overlay.classList.add("modal__overlay--show");
+  });
+};
 
 if (overlay) {
   overlay.addEventListener("click", function (evt) {
