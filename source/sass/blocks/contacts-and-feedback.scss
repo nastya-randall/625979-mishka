@@ -28,6 +28,13 @@
   }
 }
 
+.contacts-and-feedback__media-map {
+  width: 320px;
+  height: 457px;
+  position: absolute;
+  z-index: 10;
+}
+
 .contacts-and-feedback__map-image {
   width: 320px;
   height: 457px;
@@ -58,6 +65,11 @@
       top: 139px;
       left: 364px;
     }
+  }
+
+  .contacts-and-feedback__media-map {
+    width: 768px;
+    height: 457px;
   }
 
   .contacts-and-feedback__map-image {
@@ -95,6 +107,11 @@
       top: 143px;
       left: 238px;
     }
+  }
+
+  .contacts-and-feedback__media-map {
+    width: 525px;
+    height: 457px;
   }
 
   .contacts-and-feedback__map-image {
